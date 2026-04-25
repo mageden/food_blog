@@ -1,0 +1,40 @@
+{{ define "main" }}
+<article class="container post-single">
+  <header class="post-header">
+    <h1>{{ .Title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time>
+      {{ with .Params.tags }}
+        <span class="post-meta-sep">&middot;</span>
+        <span class="post-meta-tags">
+          {{ range . }}
+            <a href="{{ "tags/" | relURL }}{{ . | urlize }}/" class="tag-pill">{{ . }}</a>
+          {{ end }}
+        </span>
+      {{ end }}
+    </div>
+    {{ with .Params.thumbnail }}
+      <div class="post-hero-image">
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+      </div>
+    {{ end }}
+  </header>
+
+  <div class="post-content" data-pagefind-body>
+    {{ with .Params.intro }}
+      <div class="post-intro">{{ . | markdownify }}</div>
+    {{ end }}
+    {{ if .Params.recipe }}{{ partial "recipe-card.html" . }}{{ end }}
+    {{ .Content }}
+  </div>
+
+  <nav class="post-nav">
+    {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}" class="post-nav-link post-nav-prev">&larr; {{ .Title }}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}" class="post-nav-link post-nav-next">{{ .Title }} &rarr;</a>
+    {{ end }}
+  </nav>
+</article>
+{{ end }}

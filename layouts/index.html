@@ -1,0 +1,57 @@
+{{ define "head" }}
+<link href="{{ "pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
+{{ end }}
+
+{{ define "main" }}
+<section class="container discovery-hub">
+  <div class="home-search">
+    <div id="search"></div>
+  </div>
+  {{ $posts := where site.RegularPages "Section" "posts" }}
+
+  {{/* Collect every tag used across all posts */}}
+  {{ $allTags := slice }}
+  {{ range $posts }}
+    {{ with .Params.tags }}
+      {{ range . }}
+        {{ $allTags = $allTags | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $allTags = sort ($allTags | uniq) }}
+
+  {{/* Tag filter bar */}}
+  <div class="filter-bar" id="filter-bar">
+    <label>Browse by tag:</label>
+    {{ range $allTags }}
+      <button class="filter-tag" data-tag="{{ . }}">{{ . }}</button>
+    {{ end }}
+    <button class="filter-clear" id="filter-clear" style="display:none;">Clear all</button>
+  </div>
+
+  {{/* Post cards with data-tags for JS filtering */}}
+  <div class="post-grid" id="post-grid">
+    {{ range $posts.ByDate.Reverse }}
+      <div class="filterable-card" data-tags="{{ delimit .Params.tags "," }}">
+        {{ partial "post-card.html" . }}
+      </div>
+    {{ end }}
+  </div>
+
+  <p class="no-results" id="no-results" style="display:none;">No posts match the selected tags.</p>
+</section>
+
+<script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  if (typeof PagefindUI !== 'undefined') {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      showImages: true
+    });
+  }
+});
+</script>
+{{ partial "tag-filter-script.html" . }}
+{{ end }}

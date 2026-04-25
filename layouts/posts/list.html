@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class="container">
+  <h1 class="page-title">{{ .Title }}</h1>
+
+  {{/* Collect every tag used across all posts */}}
+  {{ $allTags := slice }}
+  {{ range .Pages }}
+    {{ with .Params.tags }}
+      {{ range . }}
+        {{ $allTags = $allTags | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $allTags = sort ($allTags | uniq) }}
+
+  {{/* Filter bar */}}
+  <div class="filter-bar" id="filter-bar">
+    <label>Filter by tag:</label>
+    {{ range $allTags }}
+      <button class="filter-tag" data-tag="{{ . }}">{{ . }}</button>
+    {{ end }}
+    <button class="filter-clear" id="filter-clear" style="display:none;">Clear all</button>
+  </div>
+
+  {{/* Post cards with data-tags attribute for JS filtering */}}
+  <div class="post-grid" id="post-grid">
+    {{ range .Pages }}
+      <div class="filterable-card" data-tags="{{ delimit .Params.tags "," }}">
+        {{ partial "post-card.html" . }}
+      </div>
+    {{ end }}
+  </div>
+
+  <p class="no-results" id="no-results" style="display:none;">No posts match the selected tags.</p>
+</section>
+
+{{ partial "tag-filter-script.html" . }}
+{{ end }}

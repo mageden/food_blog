@@ -1,0 +1,33 @@
+baseURL = 'https://mageden.github.io/food-blog/'
+languageCode = 'en-us'
+title = 'My Food Blog'
+paginate = 12
+enableRobotsTXT = true
+
+[taxonomies]
+  tag = 'tags'
+
+[params]
+  description = 'A personal food blog - recipes, cooking notes, and kitchen adventures.'
+  author = 'Me'
+  mainSections = ['posts']
+  dateFormat = 'January 2, 2006'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+
+[outputs]
+  home = ['HTML']
+  section = ['HTML']
+  taxonomy = ['HTML']
+  term = ['HTML']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false

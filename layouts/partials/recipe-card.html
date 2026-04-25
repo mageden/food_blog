@@ -1,0 +1,53 @@
+{{ $r := .Params.recipe }}
+{{ if $r }}
+<div class="recipe-card">
+  <div class="recipe-card-label">Recipe</div>
+
+  {{ with .Description }}
+    <p class="recipe-card-description">{{ . }}</p>
+  {{ end }}
+
+  {{ with $r.author }}
+    <p class="recipe-byline">By {{ . }}</p>
+  {{ end }}
+
+  {{ if or $r.prep_time $r.cook_time $r.total_time $r.yield $r.category $r.cuisine }}
+    <dl class="recipe-meta">
+      {{ with $r.prep_time }}<dt>Prep</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with $r.cook_time }}<dt>Cook</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with $r.total_time }}<dt>Total</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with $r.yield }}<dt>Yield</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with $r.category }}<dt>Category</dt><dd>{{ . }}</dd>{{ end }}
+      {{ with $r.cuisine }}<dt>Cuisine</dt><dd>{{ . }}</dd>{{ end }}
+    </dl>
+  {{ end }}
+
+  <div class="recipe-ingredients">
+    <h2 class="recipe-section-title">Ingredients</h2>
+    {{ range $r.ingredient_groups }}
+      <div class="recipe-ingredient-group">
+        {{ with .name }}<h3 class="recipe-subheading">{{ . }}</h3>{{ end }}
+        <ul>
+          {{ range .items }}
+            <li class="recipe-md-li">{{ . | markdownify }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="recipe-instructions">
+    <h2 class="recipe-section-title">Instructions</h2>
+    {{ range $r.step_groups }}
+      <div class="recipe-step-group">
+        {{ with .name }}<h3 class="recipe-subheading">{{ . }}</h3>{{ end }}
+        <ol>
+          {{ range .steps }}
+            <li class="recipe-md-li">{{ . | markdownify }}</li>
+          {{ end }}
+        </ol>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

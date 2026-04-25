@@ -1,0 +1,31 @@
+<article class="post-card">
+  <a href="{{ .RelPermalink }}" class="post-card-link">
+    {{ with .Params.thumbnail }}
+      <div class="post-card-thumbnail">
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+      </div>
+    {{ else }}
+      <div class="post-card-thumbnail post-card-thumbnail--placeholder">
+        <span>{{ $.Title | truncate 1 "" }}</span>
+      </div>
+    {{ end }}
+    <div class="post-card-body">
+      <h2 class="post-card-title">{{ .Title }}</h2>
+      <time class="post-card-date" datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ .Date.Format site.Params.dateFormat }}
+      </time>
+      {{ with .Description }}
+        <p class="post-card-desc">{{ . }}</p>
+      {{ else }}
+        <p class="post-card-desc">{{ .Summary | truncate 120 }}</p>
+      {{ end }}
+    </div>
+  </a>
+  {{ with .Params.tags }}
+    <div class="post-card-tags">
+      {{ range . }}
+        <button class="tag-pill" type="button" onclick="if(window.__toggleTag)window.__toggleTag('{{ . }}')">{{ . }}</button>
+      {{ end }}
+    </div>
+  {{ end }}
+</article>

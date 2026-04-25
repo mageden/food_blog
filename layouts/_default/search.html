@@ -1,0 +1,23 @@
+{{ define "head" }}
+<link href="{{ "pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
+{{ end }}
+
+{{ define "main" }}
+<section class="container">
+  <h1 class="page-title">Search</h1>
+  <div class="search-container">
+    <div id="search"></div>
+  </div>
+</section>
+
+<script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      showImages: true
+    });
+  });
+</script>
+{{ end }}
