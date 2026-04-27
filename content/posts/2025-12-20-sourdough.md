@@ -1,13 +1,9 @@
 ---
 title: "Tartine - Experiments"
-meta_title: ""
 description: "meta description"
 date: 2025-12-20T05:00:00Z
 thumbnail: "2025-12-20-sourdough/DSC08831.JPG"
-# image: "/images/posts/01.jpg"
-# categories: ["art"]
 tags: ["bread", "sourdough", "experiments"]
-draft: false
 recipe:
   ingredient_groups:
     - items:
@@ -36,9 +32,9 @@ Next time
 - Be careful about levain not being overly ripe, want to use "young levain"
 - Use mixture of rice flour and wheat flour for dusting basket and be more conservative
 
-â € | â €
-:-------------------------:|:-------------------------:
-![Image1](DSC08798.JPG "levain")  |  ![Image1](DSC08799.JPG "after mixing") 
-![Image1](DSC08801.JPG "bulk")  |  ![Image1](DSC08802.JPG "bulk 2") 
-![Image1](DSC08829.JPG "baked loaf")  |  ![Image1](DSC08830.JPG "crumb 1") 
-![Image1](DSC08831.JPG "crumb 2")  |  
+| | |
+| --- | --- |
+| ![levain](DSC08798.JPG) | ![after mixing](DSC08799.JPG) |
+| ![bulk](DSC08801.JPG) | ![bulk 2](DSC08802.JPG) |
+| ![baked loaf](DSC08829.JPG) | ![crumb 1](DSC08830.JPG) |
+| ![crumb 2](DSC08831.JPG) |  |

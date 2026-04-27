@@ -23,7 +23,7 @@
       {{ with .Description }}
         <p class="post-card-desc">{{ . }}</p>
       {{ else }}
-        <p class="post-card-desc">{{ .Summary | truncate 120 }}</p>
+        <p class="post-card-desc">{{ .Summary | plainify | truncate 120 }}</p>
       {{ end }}
     </div>
   </a>

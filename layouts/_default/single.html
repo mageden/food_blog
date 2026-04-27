@@ -27,9 +27,6 @@
   </header>
 
   <div class="post-content" data-pagefind-body>
-    {{ with .Params.intro }}
-      <div class="post-intro">{{ . | markdownify }}</div>
-    {{ end }}
     {{ if .Params.recipe }}{{ partial "recipe-card.html" . }}{{ end }}
     {{ .Content }}
   </div>

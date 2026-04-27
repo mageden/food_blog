@@ -1,13 +1,10 @@
 ---
 title: "Perfect loaf - Experiments"
-meta_title: ""
 description: "meta description"
-date: 2025-12-12T05:00:00Z
+date: 2025-12-12T05:00:00Z
+
 thumbnail: "2025-12-12-sourdough/DSC08778.JPG"
-# image: "/images/posts/01.jpg"
-# categories: ["art"]
 tags: ["bread", "sourdough", "experiments"]
-draft: false
 ---
 
 # Tartine bead
@@ -23,10 +20,25 @@ Process notes
 Thoughts
 - Poor results seem likely due to the starter at this point. One explanation for the gummy texture and moist crumb in previous loaves could be too high of an acid content breaking down the gluten strength. Additionally, that would make the rise sluggish leading to reduced oven spring which I am observing.
 
-⠀ | ⠀| ⠀
-:-------------------------:|:-------------------------:|:-------------------------:
-![Image1](DSC08733.JPG "Levain 1")  |  ![Image1](DSC08735.JPG "Levain 2") | ![Image1](DSC08752.JPG "End of bulk proof 1")
-![Image1](DSC08754.JPG "End of bulk proof 2")  |  ![Image1](DSC08755.JPG "Starting final proof 2") | ![Image1](DSC08761.JPG "Starting final proof 2")
-![Image1](DSC08763.JPG "Final proof before scoring")  |  ![Image1](DSC08774.JPG "Crumb") | ![Image1](DSC08777.JPG "Gummy crumb")
-![Sticky Knife](DSC08778.JPG "Sticky Knife") 
-
+<table class="image-table image-table--three">
+  <tr>
+    <td><img src="DSC08733.JPG" alt="Levain 1"></td>
+    <td><img src="DSC08735.JPG" alt="Levain 2"></td>
+    <td><img src="DSC08752.JPG" alt="End of bulk proof 1"></td>
+  </tr>
+  <tr>
+    <td><img src="DSC08754.JPG" alt="End of bulk proof 2"></td>
+    <td><img src="DSC08755.JPG" alt="Starting final proof 2"></td>
+    <td><img src="DSC08761.JPG" alt="Starting final proof 2"></td>
+  </tr>
+  <tr>
+    <td><img src="DSC08763.JPG" alt="Final proof before scoring"></td>
+    <td><img src="DSC08774.JPG" alt="Crumb"></td>
+    <td><img src="DSC08777.JPG" alt="Gummy crumb"></td>
+  </tr>
+  <tr>
+    <td><img src="DSC08778.JPG" alt="Sticky Knife"></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>

@@ -289,19 +289,38 @@ a:hover { color: var(--color-accent-hover); }
   border-radius: var(--radius);
   margin: 1.5rem 0;
 }
+.post-content table.image-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+.post-content table.image-table thead {
+  display: none;
+}
+.post-content table.image-table td {
+  width: 50%;
+  padding: .35rem;
+  vertical-align: top;
+}
+.post-content table.image-table th {
+  padding: 0;
+  border: 0;
+}
+.post-content table.image-table.image-table--three td {
+  width: 33.333%;
+}
+.post-content table.image-table img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: 0;
+}
 .post-content blockquote {
   border-left: 3px solid var(--color-accent);
   padding-left: 1.25rem;
   color: var(--color-muted);
   margin: 1.5rem 0;
   font-style: italic;
-}
-
-.post-intro {
-  margin-bottom: 1.5rem;
-}
-.post-intro p:last-child {
-  margin-bottom: 0;
 }
 
 /* ── Recipe Card ───────────────────────────────────────── */
@@ -661,6 +680,10 @@ a:hover { color: var(--color-accent-hover); }
   }
   .recipe-ingredients ul li {
     font-size: .95rem;
+  }
+
+  .post-content table.image-table td {
+    width: auto;
   }
 
   /* Tag pills: bigger touch targets */

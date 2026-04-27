@@ -1,13 +1,9 @@
 ---
 title: "Tartine loaf - Experiments"
-meta_title: ""
 description: "meta description"
-date: 2025-12-09T05:00:00Z
+date: 2025-12-09T05:00:00Z
 thumbnail: "2025-12-09-sourdough/final.JPG"
-# image: "/images/posts/01.jpg"
-# categories: ["art"]
 tags: ["bread", "sourdough", "experiments"]
-draft: false
 ---
 
 # Tartine bead
@@ -33,12 +29,22 @@ Result
 
 
 ## Levain
-⠀ | ⠀
-:-------------------------:|:-------------------------:
-![Image1](levain.JPG)  |  ![Image1](levain2.JPG)
-![Image1](preshape.JPG)  |  ![Image1](preshape2.JPG)
-![Image1](shaping.JPG)  |  ![Image1](shaping2.JPG) | ![Image1](shaping3.JPG)
-![Image1](crumb.JPG)  | ![Image1](final.JPG)
 
-
-
+<table class="image-table">
+  <tr>
+    <td><img src="levain.JPG" alt="Levain"></td>
+    <td><img src="levain2.JPG" alt="Levain 2"></td>
+  </tr>
+  <tr>
+    <td><img src="preshape.JPG" alt="Preshape"></td>
+    <td><img src="preshape2.JPG" alt="Preshape 2"></td>
+  </tr>
+  <tr>
+    <td><img src="shaping.JPG" alt="Shaping"></td>
+    <td><img src="shaping2.JPG" alt="Shaping 2"></td>
+  </tr>
+  <tr>
+    <td><img src="crumb.JPG" alt="Crumb"></td>
+    <td><img src="final.JPG" alt="Final"></td>
+  </tr>
+</table>

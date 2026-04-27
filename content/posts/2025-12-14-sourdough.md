@@ -1,13 +1,10 @@
 ---
 title: "Tartine - Experiments"
-meta_title: ""
 description: "meta description"
-date: 2025-12-14T05:00:00Z
+date: 2025-12-14T05:00:00Z
+
 thumbnail: "2025-12-14-sourdough/DSC08787.JPG"
-# image: "/images/posts/01.jpg"
-# categories: ["art"]
 tags: ["bread", "sourdough", "experiments"]
-draft: false
 ---
 
 Process notes
@@ -22,10 +19,9 @@ Process notes
 
 Take aways
 - Use plastic container w/ markings for bulk proof to measure % rise
-- Ensure that starter is very active for use. It should be able to 2x-3x w/i 4-5 hours at a regular feeding. 
+- Ensure that starter is very active for use. It should be able to 2x-3x w/i 4-5 hours at a regular feeding.
 
-⠀ | ⠀
-:-------------------------:|:-------------------------:
-![Image1](DSC08781.JPG "before bulk")  |  ![Image1](DSC08782.JPG "before final cold proof") 
-![Image1](DSC08787.JPG "after final cold proof")  | 
-
+| | |
+| --- | --- |
+| ![before bulk](DSC08781.JPG) | ![before final cold proof](DSC08782.JPG) |
+| ![after final cold proof](DSC08787.JPG) |  |

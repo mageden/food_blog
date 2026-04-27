@@ -1,13 +1,9 @@
 ---
 title: "Tartine - Experiments"
-meta_title: ""
 description: "meta description"
 date: 2025-12-20T05:00:00Z
 thumbnail: "2025-12-27-sesame-bing/DSC08840.JPG"
-# image: "/images/posts/01.jpg"
-# categories: ["art"]
 tags: ["bread", "sesame bing", "experiments"]
-draft: false
 recipe:
   ingredient_groups:
     - items:
@@ -30,7 +26,7 @@ Result notes
 Next time
 - Cook on lower temperature
 
-â € | â €
-:-------------------------:|:-------------------------:
-![Image1](DSC08834.JPG "levain")  |  ![Image1](DSC08839.JPG "after mixing") 
-![Image1](DSC08840.JPG "after mixing") 
+| | |
+| --- | --- |
+| ![levain](DSC08834.JPG) | ![after mixing](DSC08839.JPG) |
+| ![after mixing](DSC08840.JPG) |  |

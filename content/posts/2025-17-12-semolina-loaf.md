@@ -1,13 +1,9 @@
 ---
 title: "Semolina Loaf - Experiments"
-meta_title: ""
 description: "meta description"
 date: 2025-12-17T05:00:00Z
 thumbnail: "2025-17-12-semolina-loaf/DSC08796.JPG"
-# image: "/images/posts/01.jpg"
-# categories: ["art"]
 tags: ["bread", "yeast", "loaf", "semolina", "experiments"]
-draft: false
 ---
 
 Process notes
