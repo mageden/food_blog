@@ -2,3 +2,10 @@ public/
 scratch/
 resources/_gen/
 .hugo_build.lock
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Pytest
+.pytest_cache/
