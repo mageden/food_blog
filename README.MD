@@ -76,6 +76,20 @@ You can also run the script directly if you already have Pillow installed:
 python tools/resize_images.py assets --overwrite
 ```
 
+### Run unit tests
+
+Install the Python dependencies with `uv` if you have not already:
+
+```bash
+uv sync
+```
+
+Run the test suite:
+
+```bash
+uv run pytest
+```
+
 ## GitHub Pages deployment
 
 This repo includes [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which:
