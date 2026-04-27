@@ -1,9 +1,8 @@
 ---
-title: "Tartine - Experiments"
-description: "meta description"
+title: "Tartine"
 date: 2025-12-20T05:00:00Z
-thumbnail: "2025-12-20-sourdough/DSC08831.JPG"
-tags: ["bread", "sourdough", "experiments"]
+thumbnail: "/assets/2025-12-20-sourdough/DSC08831.JPG"
+tags: ["bread", "sourdough", "tartine"]
 recipe:
   ingredient_groups:
     - items:
@@ -34,7 +33,7 @@ Next time
 
 | | |
 | --- | --- |
-| ![levain](DSC08798.JPG) | ![after mixing](DSC08799.JPG) |
-| ![bulk](DSC08801.JPG) | ![bulk 2](DSC08802.JPG) |
-| ![baked loaf](DSC08829.JPG) | ![crumb 1](DSC08830.JPG) |
-| ![crumb 2](DSC08831.JPG) |  |
+| ![levain](/assets/2025-12-20-sourdough/DSC08798.JPG) | ![after mixing](/assets/2025-12-20-sourdough/DSC08799.JPG) |
+| ![bulk](/assets/2025-12-20-sourdough/DSC08801.JPG) | ![bulk 2](/assets/2025-12-20-sourdough/DSC08802.JPG) |
+| ![baked loaf](/assets/2025-12-20-sourdough/DSC08829.JPG) | ![crumb 1](/assets/2025-12-20-sourdough/DSC08830.JPG) |
+| ![crumb 2](/assets/2025-12-20-sourdough/DSC08831.JPG) |  |

@@ -2,7 +2,7 @@
 title: "Pompe a l'huile"
 description: "Added a preferment."
 date: 2026-01-06T05:00:00Z
-thumbnail: "2026-01-06-gibbasier/DSC08875.JPG"
+thumbnail: "/assets/2026-01-06-gibbasier/DSC08875.JPG"
 tags: ["bread", "french", "pre-ferment", "pompe a l'huile"]
 recipe:
   ingredient_groups:
@@ -19,6 +19,6 @@ Result notes
 
 | | |
 | --- | --- |
-| ![before bulk](DSC08854.JPG) | ![after bulk](DSC08857.JPG) |
-| ![before shaping](DSC08859.JPG) | ![final](DSC08871.JPG) |
-| ![final 2](DSC08873.JPG) | ![crumb](DSC08875.JPG) |
+| ![before bulk](/assets/2026-01-06-gibbasier/DSC08854.JPG) | ![after bulk](/assets/2026-01-06-gibbasier/DSC08857.JPG) |
+| ![before shaping](/assets/2026-01-06-gibbasier/DSC08859.JPG) | ![final](/assets/2026-01-06-gibbasier/DSC08871.JPG) |
+| ![final 2](/assets/2026-01-06-gibbasier/DSC08873.JPG) | ![crumb](/assets/2026-01-06-gibbasier/DSC08875.JPG) |

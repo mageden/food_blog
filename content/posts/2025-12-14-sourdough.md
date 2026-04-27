@@ -1,10 +1,9 @@
 ---
-title: "Tartine - Experiments"
-description: "meta description"
+title: "Tartine"
+# description: "meta description"
 date: 2025-12-14T05:00:00Z
-
-thumbnail: "2025-12-14-sourdough/DSC08787.JPG"
-tags: ["bread", "sourdough", "experiments"]
+thumbnail: "/assets/2025-12-14-sourdough/DSC08787.JPG"
+tags: ["bread", "sourdough", "tartine"]
 ---
 
 Process notes
@@ -23,5 +22,5 @@ Take aways
 
 | | |
 | --- | --- |
-| ![before bulk](DSC08781.JPG) | ![before final cold proof](DSC08782.JPG) |
-| ![after final cold proof](DSC08787.JPG) |  |
+| ![before bulk](/assets/2025-12-14-sourdough/DSC08781.JPG) | ![before final cold proof](/assets/2025-12-14-sourdough/DSC08782.JPG) |
+| ![after final cold proof](/assets/2025-12-14-sourdough/DSC08787.JPG) |  |

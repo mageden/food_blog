@@ -1,14 +1,9 @@
 <article class="post-card">
   <a href="{{ .RelPermalink }}" class="post-card-link">
     {{ with .Params.thumbnail }}
-      {{ $thumb := . }}
-      {{ $resource := resources.Get $thumb }}
+      {{ $thumb := strings.TrimPrefix "/" . }}
       <div class="post-card-thumbnail">
-        {{ if $resource }}
-          <img src="{{ $resource.RelPermalink }}" alt="{{ $.Title }}" loading="lazy">
-        {{ else }}
-          <img src="{{ $thumb | relURL }}" alt="{{ $.Title }}" loading="lazy">
-        {{ end }}
+        <img src="{{ $thumb | relURL }}" alt="{{ $.Title }}" loading="lazy">
       </div>
     {{ else }}
       <div class="post-card-thumbnail post-card-thumbnail--placeholder">
@@ -20,10 +15,8 @@
       <time class="post-card-date" datetime="{{ .Date.Format "2006-01-02" }}">
         {{ .Date.Format site.Params.dateFormat }}
       </time>
-      {{ with .Description }}
+      {{ with .Params.description }}
         <p class="post-card-desc">{{ . }}</p>
-      {{ else }}
-        <p class="post-card-desc">{{ .Summary | plainify | truncate 120 }}</p>
       {{ end }}
     </div>
   </a>

@@ -1,8 +1,7 @@
 {{- $dest := .Destination -}}
-{{- $slug := .Page.File.BaseFileName -}}
 {{- if or (hasPrefix $dest "http://") (hasPrefix $dest "https://") (hasPrefix $dest "//") -}}
 <img src="{{ $dest }}" alt="{{ .Text }}" loading="lazy">
 {{- else -}}
-  {{- $resource := resources.Get (printf "%s/%s" $slug $dest) -}}
-<img src="{{ if $resource }}{{ $resource.RelPermalink }}{{ else }}{{ $dest | relURL }}{{ end }}" alt="{{ .Text }}" loading="lazy">
+{{- $local := strings.TrimPrefix "/" $dest -}}
+<img src="{{ $local | relURL }}" alt="{{ .Text }}" loading="lazy">
 {{- end -}}

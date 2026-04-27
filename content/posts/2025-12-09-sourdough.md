@@ -1,9 +1,8 @@
 ---
-title: "Tartine loaf - Experiments"
-description: "meta description"
+title: "Tartine loaf"
 date: 2025-12-09T05:00:00Z
-thumbnail: "2025-12-09-sourdough/final.JPG"
-tags: ["bread", "sourdough", "experiments"]
+thumbnail: "/assets/2025-12-09-sourdough/final.JPG"
+tags: ["bread", "sourdough", "tartine"]
 ---
 
 # Tartine bead
@@ -30,21 +29,9 @@ Result
 
 ## Levain
 
-<table class="image-table">
-  <tr>
-    <td><img src="levain.JPG" alt="Levain"></td>
-    <td><img src="levain2.JPG" alt="Levain 2"></td>
-  </tr>
-  <tr>
-    <td><img src="preshape.JPG" alt="Preshape"></td>
-    <td><img src="preshape2.JPG" alt="Preshape 2"></td>
-  </tr>
-  <tr>
-    <td><img src="shaping.JPG" alt="Shaping"></td>
-    <td><img src="shaping2.JPG" alt="Shaping 2"></td>
-  </tr>
-  <tr>
-    <td><img src="crumb.JPG" alt="Crumb"></td>
-    <td><img src="final.JPG" alt="Final"></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| ![Levain](/assets/2025-12-09-sourdough/levain.JPG) | ![Levain 2](/assets/2025-12-09-sourdough/levain2.JPG) |
+| ![Preshape](/assets/2025-12-09-sourdough/preshape.JPG) | ![Preshape 2](/assets/2025-12-09-sourdough/preshape2.JPG) |
+| ![Shaping](/assets/2025-12-09-sourdough/shaping.JPG) | ![Shaping 2](/assets/2025-12-09-sourdough/shaping2.JPG) |
+| ![Crumb](/assets/2025-12-09-sourdough/crumb.JPG) | ![Final](/assets/2025-12-09-sourdough/final.JPG) |

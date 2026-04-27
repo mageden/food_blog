@@ -1,9 +1,8 @@
 ---
-title: "Tartine - Experiments"
-description: "meta description"
-date: 2025-12-20T05:00:00Z
-thumbnail: "2025-12-27-sesame-bing/DSC08840.JPG"
-tags: ["bread", "sesame bing", "experiments"]
+title: "Sesame bing"
+date: 2025-12-27T05:00:00Z
+thumbnail: "/assets/2025-12-27-sesame-bing/DSC08840.JPG"
+tags: ["bread", "sesame bing"]
 recipe:
   ingredient_groups:
     - items:
@@ -28,5 +27,5 @@ Next time
 
 | | |
 | --- | --- |
-| ![levain](DSC08834.JPG) | ![after mixing](DSC08839.JPG) |
-| ![after mixing](DSC08840.JPG) |  |
+| ![levain](/assets/2025-12-27-sesame-bing/DSC08834.JPG) | ![after mixing](/assets/2025-12-27-sesame-bing/DSC08839.JPG) |
+| ![after mixing](/assets/2025-12-27-sesame-bing/DSC08840.JPG) |  |

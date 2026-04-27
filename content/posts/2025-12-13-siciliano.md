@@ -1,10 +1,9 @@
 ---
-title: "Pane Siciliano - Experiments"
-description: "meta description"
-date: 2025-12-12T05:00:00Z
-
-thumbnail: "2025-12-13-siciliano/DSC08786.JPG"
-tags: ["bread", "pane siciliano", "experiments"]
+title: "Pane Siciliano"
+# description: "meta description"
+date: 2025-12-13T05:00:00Z
+thumbnail: "/assets/2025-12-13-siciliano/DSC08786.JPG"
+tags: ["bread", "pane siciliano", "italian"]
 ---
 
 # Pane Siciliano
@@ -22,17 +21,8 @@ Notes
 - Switch to poolish instead of pate fermentee. It is easier to mix and has a mild sweet flavor
 - It is a pain to regrigerate the dough in those large shapes. Try baking same day to compare 
 
-<table class="image-table">
-  <tr>
-    <td><img src="DSC08767.JPG" alt="After bulk"></td>
-    <td><img src="DSC08769.JPG" alt="After bulk 2"></td>
-  </tr>
-  <tr>
-    <td><img src="DSC08780.JPG" alt="After final proof"></td>
-    <td><img src="DSC08784.JPG" alt="Baked loaf"></td>
-  </tr>
-  <tr>
-    <td><img src="DSC08786.JPG" alt="Crumb shot"></td>
-    <td></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| ![After bulk](/assets/2025-12-13-siciliano/DSC08767.JPG) | ![After bulk 2](/assets/2025-12-13-siciliano/DSC08769.JPG) |
+| ![After final proof](/assets/2025-12-13-siciliano/DSC08780.JPG) | ![Baked loaf](/assets/2025-12-13-siciliano/DSC08784.JPG) |
+| ![Crumb shot](/assets/2025-12-13-siciliano/DSC08786.JPG) |  |
