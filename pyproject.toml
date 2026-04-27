@@ -7,7 +7,7 @@ name = "food-blog-tools"
 version = "0.1.0"
 description = "Helper tools for the food blog."
 requires-python = ">=3.11"
-dependencies = ["Pillow>=10.0.0"]
+dependencies = ["Pillow>=10.0.0", "pytest>=8.0.0"]
 
 [project.scripts]
 resize-images = "tools.resize_images:main"
