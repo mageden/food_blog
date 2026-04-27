@@ -54,6 +54,28 @@ tags: ["italian", "pasta", "quick"]
 - Reference them as `/images/filename.jpg`
 - Use normal Markdown in body content, for example `![Alt text](/images/filename.jpg)`
 
+### Resize images
+
+Install the tool dependencies with `uv`:
+
+```bash
+uv sync
+```
+
+Run the image resizer with `uv`:
+
+```bash
+uv run resize-images assets --overwrite
+```
+
+Default behavior is `1600px` max width and JPEG quality `80`.
+
+You can also run the script directly if you already have Pillow installed:
+
+```bash
+python tools/resize_images.py assets --overwrite
+```
+
 ## GitHub Pages deployment
 
 This repo includes [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which:

@@ -14,8 +14,14 @@
       {{ end }}
     </div>
     {{ with .Params.thumbnail }}
+      {{ $thumb := . }}
+      {{ $resource := resources.Get $thumb }}
       <div class="post-hero-image">
-        <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+        {{ if $resource }}
+          <img src="{{ $resource.RelPermalink }}" alt="{{ $.Title }}">
+        {{ else }}
+          <img src="{{ $thumb | relURL }}" alt="{{ $.Title }}">
+        {{ end }}
       </div>
     {{ end }}
   </header>

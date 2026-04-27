@@ -22,32 +22,36 @@
     </dl>
   {{ end }}
 
-  <div class="recipe-ingredients">
-    <h2 class="recipe-section-title">Ingredients</h2>
-    {{ range $r.ingredient_groups }}
-      <div class="recipe-ingredient-group">
-        {{ with .name }}<h3 class="recipe-subheading">{{ . }}</h3>{{ end }}
-        <ul>
-          {{ range .items }}
-            <li class="recipe-md-li">{{ . | markdownify }}</li>
-          {{ end }}
-        </ul>
-      </div>
-    {{ end }}
-  </div>
+  {{ with $r.ingredient_groups }}
+    <div class="recipe-ingredients">
+      <h2 class="recipe-section-title">Ingredients</h2>
+      {{ range . }}
+        <div class="recipe-ingredient-group">
+          {{ with .name }}<h3 class="recipe-subheading">{{ . }}</h3>{{ end }}
+          <ul>
+            {{ range .items }}
+              <li class="recipe-md-li">{{ . | markdownify }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
 
-  <div class="recipe-instructions">
-    <h2 class="recipe-section-title">Instructions</h2>
-    {{ range $r.step_groups }}
-      <div class="recipe-step-group">
-        {{ with .name }}<h3 class="recipe-subheading">{{ . }}</h3>{{ end }}
-        <ol>
-          {{ range .steps }}
-            <li class="recipe-md-li">{{ . | markdownify }}</li>
-          {{ end }}
-        </ol>
-      </div>
-    {{ end }}
-  </div>
+  {{ with $r.step_groups }}
+    <div class="recipe-instructions">
+      <h2 class="recipe-section-title">Instructions</h2>
+      {{ range . }}
+        <div class="recipe-step-group">
+          {{ with .name }}<h3 class="recipe-subheading">{{ . }}</h3>{{ end }}
+          <ol>
+            {{ range .steps }}
+              <li class="recipe-md-li">{{ . | markdownify }}</li>
+            {{ end }}
+          </ol>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
 </div>
 {{ end }}

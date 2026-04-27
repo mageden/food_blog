@@ -32,7 +32,8 @@
   {{/* Post cards with data-tags for JS filtering */}}
   <div class="post-grid" id="post-grid">
     {{ range $posts.ByDate.Reverse }}
-      <div class="filterable-card" data-tags="{{ delimit .Params.tags "," }}">
+      {{ $tags := .Params.tags | default (slice) }}
+      <div class="filterable-card" data-tags="{{ delimit $tags "," }}">
         {{ partial "post-card.html" . }}
       </div>
     {{ end }}
